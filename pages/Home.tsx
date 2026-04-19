@@ -168,7 +168,7 @@ const Home: React.FC = () => {
                 <div className="h-[2px] w-8 bg-accent-gold"></div>
                 <span className="text-accent-gold text-[10px] uppercase tracking-[0.4em] font-black">Highly Coveted</span>
               </div>
-              <h2 className="text-5xl md:text-6xl font-sans font-black tracking-tighter text-primary">Our Signature Gems</h2>
+              <h2 className="text-5xl md:text-6xl font-sans font-black tracking-tighter text-primary">Our Products</h2>
             </div>
             <Link to="/products" className="group flex items-center gap-6 text-[11px] font-black uppercase tracking-[0.3em] text-primary/40 hover:text-primary transition-all pb-2 border-b border-primary/5 hover:border-accent-gold">
               Explore All <ArrowRight className="h-4 w-4 transform transition-transform group-hover:translate-x-2" />
@@ -186,107 +186,14 @@ const Home: React.FC = () => {
 
       <FlashSale cmsData={cmsContent?.flashSale} />
 
-      {/* 5. Our Impact / Story - Professional Editorial Redesign */}
-      <section className="py-40 px-6 bg-[#FAF9F6] overflow-hidden">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-24 items-center">
 
-          {/* Static Editorial Image Composition */}
-          <div className="relative order-2 md:order-1">
-            <div className="relative aspect-[4/5] z-10">
-              {/* Main Image - Large & Stable */}
-              <div className="w-full h-full rounded-sm overflow-hidden shadow-2xl">
-                <img
-                  src={impact.image || "https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?q=80&w=2000"}
-                  alt="Sustainable Cotton"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Overlapping Secondary Image */}
-              <div className="absolute -bottom-12 -right-12 w-3/5 aspect-square bg-[#FAF9F6] p-3 shadow-2xl z-20 hidden md:block">
-                <div className="w-full h-full overflow-hidden">
-                  <img
-                    src="https://media.istockphoto.com/id/1137526672/photo/young-woman-with-fabric-samples-for-curtains-at-table-multiple-color-fabric-texture-samples.jpg?s=612x612&w=0&k=20&c=kfgV-pvqjYouJ0tfX_B691UKumlA1yTB4JEzXU-qQN0="
-                    alt="Fabric Detail"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Decorative Accent */}
-              <div className="absolute -top-6 -left-6 w-24 h-24 border-t-2 border-l-2 border-primary/5 pointer-events-none" />
-            </div>
-          </div>
-
-          {/* Sophisticated Content Reveal */}
-          <div className="order-1 md:order-2">
-            <div>
-              <div className="flex items-center gap-4 text-accent-gold mb-8">
-                <span className="w-12 h-[1px] bg-accent-gold/40"></span>
-                <span className="text-[11px] uppercase tracking-[0.4em] font-black">Our Heritage</span>
-              </div>
-
-              <h2 className="text-6xl md:text-7xl font-sans font-light mb-10 leading-[1.1] text-primary">
-                {impact.title || "Unearth the Rare"} <br />
-                <span className="italic text-primary/60 font-sans block mt-3 indent-8 md:indent-16">
-                  {impact.highlight || "Gems of the North"}
-                </span>
-              </h2>
-
-              <p className="text-primary/60 font-sans leading-[1.8] text-lg mb-12 max-w-lg">
-                {impact.description || "We believe that true beauty is forged in nature. Easy Shop and Customer Service is committed to ethical excavation and transparent sourcing. We work directly with master miners to ensure every stone is a testament to geological perfection."}
-              </p>
-
-              {/* Minimalist Stats Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 border-t border-primary/5 pt-12">
-                {[
-                  { label: "Natural Quality", value: "100%" },
-                  { label: "Conflict Free", value: "0%" },
-                  { label: "Expert Cut", value: "Pure" }
-                ].map((stat, i) => (
-                  <div key={i} className="space-y-2">
-                    <h4 className="font-sans text-3xl text-primary">{stat.value}</h4>
-                    <p className="text-[10px] text-primary/40 uppercase tracking-[0.2em] font-bold">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div>
-                <Link
-                  to="/about"
-                  className="group inline-flex items-center gap-6 text-[10px] uppercase tracking-[0.4em] font-black text-primary hover:text-accent-gold transition-all"
-                >
-                  <span className="border-b-2 border-primary/5 group-hover:border-accent-gold pb-3 transition-all">Discover the History</span>
-                  <div className="w-14 h-14 border border-primary/5 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all shadow-xl">
-                    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 text-primary group-hover:text-accent-gold" />
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
       <div className="bg-white">
         <Testimonials />
       </div>
 
-      {/* 6. Newsletter / CTA Callout */}
-      <section className="py-32 px-6 text-center bg-[#12181B] overflow-hidden">
-        <div className="max-w-xl mx-auto">
-          <h2 className="text-4xl font-sans font-black text-white mb-6 uppercase tracking-tighter">Join the <span className="text-accent-gold">Discovery</span></h2>
-          <p className="text-white/40 mb-10 text-xs uppercase tracking-[0.3em] font-black">Secure early access to the latest vault additions.</p>
-          <div className="flex gap-2 p-1 bg-white/[0.03] border border-white/10 rounded-sm">
-            <input 
-              type="email" 
-              placeholder="YOUR VAULT EMAIL" 
-              className="flex-1 bg-transparent px-6 py-4 text-[10px] font-black text-white tracking-widest outline-none" 
-            />
-            <button className="bg-accent-gold text-primary px-10 py-4 text-[10px] uppercase tracking-[0.4em] font-black hover:bg-white transition-colors">Join</button>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 };
