@@ -103,7 +103,7 @@ const FlashSale: React.FC<FlashSaleProps> = ({ cmsData }) => {
                     <div className="flex-1">
                         <div className="flex items-center gap-6 mb-8">
                             <span className="text-accent-gold text-xs uppercase tracking-[0.5em] font-black">
-                                {cmsData.subtitle || 'Exclusive Flash Acquisition'}
+                                {cmsData.subtitle || 'Limited Time Tech Deals'}
                             </span>
                             <div className="flex items-center gap-2.5 px-4 py-1.5 bg-accent-gold rounded-full border border-accent-gold/20">
                                 <Zap className="h-4 w-4 text-primary fill-primary" />
@@ -111,7 +111,7 @@ const FlashSale: React.FC<FlashSaleProps> = ({ cmsData }) => {
                             </div>
                         </div>
                         <h2 className="text-5xl md:text-7xl font-sans font-black text-white mb-10 tracking-tighter leading-tight uppercase">
-                            {cmsData.title || 'The Vault Opening'}
+                            {cmsData.title || 'The Tech Drop'}
                         </h2>
 
                         <div className="flex gap-10">
@@ -132,7 +132,7 @@ const FlashSale: React.FC<FlashSaleProps> = ({ cmsData }) => {
                     </div>
 
                     <Link to="/products" className="hidden md:flex items-center gap-4 text-accent-gold/60 hover:text-accent-gold transition-all duration-500 group pb-4 border-b border-white/10 hover:border-accent-gold">
-                        <span className="text-[11px] uppercase tracking-[0.4em] font-black">Access All Treasures</span>
+                        <span className="text-[11px] uppercase tracking-[0.4em] font-black">Shop All Deals</span>
                         <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-3" />
                     </Link>
                 </div>

@@ -229,7 +229,7 @@ const Header: React.FC<{ onCartOpen: () => void }> = ({ onCartOpen }) => {
               {siteSettings.logoUrl ? (
                 <img src={siteSettings.logoUrl} alt={siteSettings.siteName} className="h-14 md:h-20 max-w-[180px] md:max-w-[280px] w-auto object-contain transition-all duration-500" />
               ) : (
-                <span className="whitespace-nowrap"><span className="text-accent-gold">N</span>orthern <span className="text-accent-gold italic">Treasures</span></span>
+                <span className="whitespace-nowrap">Easy Shop <span className="text-accent-gold italic">and Customer Service</span></span>
               )}
             </Link>
           </div>

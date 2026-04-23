@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
               Easy Shop <span className="text-accent-gold">and Customer Service</span>
             </Link>
             <p className="text-white/60 text-xs font-sans leading-relaxed max-w-xs uppercase tracking-widest">
-              {footer?.description || 'Curating museum-grade gemstones and rare minerals for the discerning collector. Mindfully sourced, ethically verified.'}
+              {footer?.description || 'Curating premium wellness products and modern accessories for the discerning shopper. Mindfully sourced, ethically verified.'}
             </p>
             <div className="flex space-x-6 pt-4">
               {footer?.socialLinks?.facebook && (
@@ -78,11 +78,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-[10px] font-black uppercase tracking-[0.3em] mb-10 text-accent-gold">Concierge</h4>
             <ul className="space-y-6">
-              <li><Link to="/shipping-returns" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Transit & Security</Link></li>
-              <li><Link to="/track-order" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Track Acquisition</Link></li>
-              <li><Link to="/faq" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Vault FAQ</Link></li>
-              <li><Link to="/contact" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Contact Gemologist</Link></li>
-              <li><Link to="/about" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Our Heritage</Link></li>
+              <li><Link to="/shipping-returns" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Shipping & Returns</Link></li>
+              <li><Link to="/track-order" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Track Order</Link></li>
+              <li><Link to="/faq" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Help & FAQ</Link></li>
+              <li><Link to="/contact" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Contact Us</Link></li>
+              <li><Link to="/about" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">About Us</Link></li>
               <li><Link to="/support" className="text-white/50 hover:text-accent-gold text-[11px] font-black uppercase tracking-widest transition-all">Support</Link></li>
             </ul>
           </div>

@@ -81,8 +81,8 @@ const Home: React.FC = () => {
     <div className="bg-background text-primary overflow-x-hidden w-full relative">
       <SEO 
         title="Home" 
-        description="Welcome to Easy Shop and Customer Service. Discover the world's most exquisite gemstones and rare minerals, ethically sourced from the heart of the North."
-        keywords="gemstones, mining, emeralds, sapphires, rubies, rare minerals, ethical sourcing"
+        description="Welcome to Easy Shop and Customer Service. Discover our premium selection of wellness products and modern accessories."
+        keywords="wellness, mobile accessories, shilajit, dry fruits, easy shop"
       />
       {/* 1. USP Bar (Top of Home) */}
       <div className="bg-primary text-white py-3 border-b border-white/5 shadow-lg">
@@ -111,14 +111,14 @@ const Home: React.FC = () => {
           <div className="text-center mb-32">
             <div className="flex items-center justify-center space-x-6 mb-8">
               <div className="h-[1px] w-16 bg-accent/30"></div>
-              <span className="text-accent text-[10px] uppercase tracking-[0.6em] font-black">The Archives</span>
+              <span className="text-accent text-[10px] uppercase tracking-[0.6em] font-black">Digital Catalog</span>
               <div className="h-[1px] w-16 bg-accent/30"></div>
             </div>
             <h2 className="text-6xl md:text-8xl font-sans font-black tracking-tighter text-white mb-10 leading-none">
-              Geological <span className="italic text-accent-gold">Curations</span>
+              Tech <span className="italic text-accent-gold">Showcase</span>
             </h2>
             <p className="text-white/40 max-w-2xl mx-auto font-sans text-sm md:text-base leading-relaxed tracking-wide">
-              Every treasure in our vault is a piece of earth's history. Explore our collections, ethically unearthered from global sources.
+              Explore our premium selection of mobile phones, accessories, and cutting-edge electronics. Engineered for performance and style.
             </p>
           </div>
 
@@ -154,7 +154,7 @@ const Home: React.FC = () => {
           
           <div className="mt-24 text-center">
              <Link to="/products" className="inline-flex items-center gap-6 text-[10px] font-black uppercase tracking-[0.5em] text-accent/60 hover:text-accent transition-all group">
-                Access All Vaults <div className="h-[1px] w-12 bg-accent/20 group-hover:w-24 transition-all duration-500"></div>
+                View Full Catalog <div className="h-[1px] w-12 bg-accent/20 group-hover:w-24 transition-all duration-500"></div>
              </Link>
           </div>
         </div>

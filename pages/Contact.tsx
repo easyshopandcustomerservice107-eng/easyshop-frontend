@@ -22,8 +22,8 @@ const Contact: React.FC = () => {
     return (
         <div className="bg-background min-h-screen grain-texture">
             <SEO 
-                title="Contact the Vault" 
-                description="Contact Easy Shop and Customer Service for inquiries about rare gemstones, mineral specimens, or wholesale opportunities. Our gemologists are here to help."
+                title="Contact Us" 
+                description="Contact Easy Shop and Customer Service for any inquiries. We are here to help you with our premium wellness products and accessories."
             />
             {/* Hero Section */}
             <section className="bg-[#0B1215] py-32 px-6 border-b border-white/5 relative overflow-hidden">
@@ -122,9 +122,9 @@ const Contact: React.FC = () => {
 
                             <div className="space-y-10">
                                 {[
-                                    { icon: Mail, title: "Official Signal", info: "support@easyshop.com", sub: "Response within 24 standard hours" },
-                                    { icon: Phone, title: "Audio Transmission", info: "+1 (800) GEMS-NOR", sub: "Mon-Fri, 9am-5pm MST" },
-                                    { icon: MapPin, title: "Vault Headquarters", info: "Yellowknife, NT X1A 2P7 Canada", sub: "452 Mineral Range Road" }
+                                    { icon: Mail, title: "Email", info: "easyshopandcustomerservice107@gmail.com", sub: "Response within 24 hours" },
+                                    { icon: Phone, title: "Phone / WhatsApp", info: "+92312 3655556", sub: "Mon-Sat, 9am-6pm" },
+                                    { icon: MapPin, title: "Location", info: "Namak Mandi Fawara Chowk", sub: "Peshawar Sader" }
                                 ].map((item, idx) => (
                                     <div key={idx} className="flex items-start gap-8 group">
                                         <div className="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center flex-shrink-0 border border-transparent group-hover:border-accent-gold/20 transition-all duration-500">
@@ -144,9 +144,8 @@ const Contact: React.FC = () => {
                                 <h3 className="text-[10px] font-black text-primary uppercase tracking-[0.5em] mb-8">Vault Operating Hours</h3>
                                 <div className="space-y-6">
                                     {[
-                                        { days: "Monday - Friday", hours: "09:00 - 18:00 MST" },
-                                        { days: "Saturday", hours: "10:00 - 16:00 MST" },
-                                        { days: "Sunday / Holidays", hours: "Reserved for Discovery" }
+                                        { days: "Monday - Saturday", hours: "09:00 - 18:00" },
+                                        { days: "Sunday", hours: "Closed" }
                                     ].map((slot, idx) => (
                                         <div key={idx} className="flex justify-between items-center text-[10px] font-black uppercase tracking-[0.3em] border-b border-primary/5 pb-5 last:border-0 last:pb-0">
                                             <span className="text-primary/40">{slot.days}</span>

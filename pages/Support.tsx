@@ -7,7 +7,7 @@ const Support: React.FC = () => {
         <div className="bg-primary grain-texture min-h-screen">
             <SEO 
                 title="Support" 
-                description="Contact Northern Treasures for assistance with your gemstone and rare mineral inquiries."
+                description="Contact Easy Shop and Customer Service for assistance with your inquiries."
             />
             {/* Hero Section */}
             <section className="relative h-[45vh] overflow-hidden">
@@ -35,9 +35,9 @@ const Support: React.FC = () => {
                             </div>
                             <h3 className="text-lg font-sans font-black text-white mb-2 uppercase tracking-tight">Phone</h3>
                             <p className="text-white/70 text-sm font-medium">
-                                +1 (555) 123-4567
+                                +92312 3655556
                             </p>
-                            <p className="text-white/40 text-[10px] mt-4 uppercase tracking-widest">Mon-Fri 9am-6pm</p>
+                            <p className="text-white/40 text-[10px] mt-4 uppercase tracking-widest">Mon-Sat 9am-6pm</p>
                         </div>
 
                         <div className="bg-white/5 p-10 border border-white/10 hover:border-accent-gold/50 transition-all group flex flex-col items-center text-center shadow-xl">
@@ -46,7 +46,7 @@ const Support: React.FC = () => {
                             </div>
                             <h3 className="text-lg font-sans font-black text-white mb-2 uppercase tracking-tight">WhatsApp</h3>
                             <p className="text-white/70 text-sm font-medium">
-                                +1 (555) 123-4567
+                                +92312 3655556
                             </p>
                             <p className="text-white/40 text-[10px] mt-4 uppercase tracking-widest">Quick Replies</p>
                         </div>
@@ -57,7 +57,7 @@ const Support: React.FC = () => {
                             </div>
                             <h3 className="text-lg font-sans font-black text-white mb-2 uppercase tracking-tight">Email</h3>
                             <p className="text-white/70 text-sm font-medium">
-                                support@northerntreasures.com
+                                easyshopandcustomerservice107@gmail.com
                             </p>
                             <p className="text-white/40 text-[10px] mt-4 uppercase tracking-widest">24/7 Support</p>
                         </div>
@@ -68,11 +68,10 @@ const Support: React.FC = () => {
                             </div>
                             <h3 className="text-lg font-sans font-black text-white mb-2 uppercase tracking-tight">Location</h3>
                             <p className="text-white/70 text-sm font-medium leading-relaxed">
-                                123 Gemstone Avenue<br />
-                                Suite 400<br />
-                                New York, NY 10001
+                                Namak Mandi Fawara Chowk<br />
+                                Peshawar Sader
                             </p>
-                            <p className="text-white/40 text-[10px] mt-4 uppercase tracking-widest">Headquarters</p>
+                            <p className="text-white/40 text-[10px] mt-4 uppercase tracking-widest">Main Store</p>
                         </div>
                     </div>
                 </div>

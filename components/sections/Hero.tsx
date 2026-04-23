@@ -17,33 +17,33 @@ interface Slide {
 const defaultSlides: Slide[] = [
     {
         id: 1,
-        title: "The Heart of the Earth",
-        highlight: "Exquisite Emeralds",
-        subtitle: "The Imperial Collection",
-        description: "Explore our legendary selection of ethically sourced, museum-grade emeralds from the fabled mines of the North.",
-        image: "https://images.unsplash.com/photo-1596756627581-64531853a479?q=80&w=2670&auto=format&fit=crop",
-        link: "/products?category=Emeralds",
-        buttonText: "Explore Collection"
+        title: "The Future of Mobile",
+        highlight: "Premium Smartphones",
+        subtitle: "Flagship Collection",
+        description: "Experience the pinnacle of mobile technology with our curated selection of high-performance smartphones and next-gen devices.",
+        image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=2000&auto=format&fit=crop",
+        link: "/products",
+        buttonText: "Shop Smartphones"
     },
     {
         id: 2,
-        title: "Purity & Perfection",
-        highlight: "Rare Sapphires",
-        subtitle: "The Deep Azure Series",
-        description: "Deep, celestial blues and incomparable clarity. Discover sapphires that transcend time and tradition.",
-        image: "https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=2671&auto=format&fit=crop",
-        link: "/products?category=Sapphires",
-        buttonText: "View Gallery"
+        title: "Power & Precision",
+        highlight: "Smart Accessories",
+        subtitle: "Essential Tech Series",
+        description: "From high-speed chargers to premium audio gear, enhance your digital lifestyle with accessories engineered for reliability.",
+        image: "https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=2000&auto=format&fit=crop",
+        link: "/products",
+        buttonText: "Browse Accessories"
     },
     {
         id: 3,
-        title: "Untamed Beauty",
-        highlight: "Raw Minerals",
-        subtitle: "The Geological Vault",
-        description: "From crystalline structures to rare mineral specimens, own a fragment of geological history.",
-        image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=2574&auto=format&fit=crop",
-        link: "/products?category=Minerals",
-        buttonText: "Direct from Source"
+        title: "Innovative Living",
+        highlight: "Smart Devices",
+        subtitle: "The Gadget Hub",
+        description: "Discover the latest in smart home technology, wearables, and electronic innovations designed for the modern world.",
+        image: "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=2000&auto=format&fit=crop",
+        link: "/products",
+        buttonText: "Explore Gadgets"
     }
 ];
 
@@ -144,7 +144,7 @@ const Hero: React.FC<{ cmsData?: any }> = ({ cmsData }) => {
 
                         {/* SOCIAL MEDIA VERTICAL BAR (Left Side to avoid pagination clash) */}
                         <div className="hidden lg:flex social-bar-vertical !left-12 !right-auto">
-                            <span className="social-label-vertical">Follow The Discovery</span>
+                            <span className="social-label-vertical">Follow Our Updates</span>
                             <div className="h-16 w-[1px] bg-accent/20 mb-4 shadow-[0_0_10px_rgba(197,160,89,0.2)]"></div>
                             
                             <a href="#" className="social-icon-wrapper group/icon">
