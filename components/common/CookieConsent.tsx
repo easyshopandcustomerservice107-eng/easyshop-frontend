@@ -17,6 +17,11 @@ const CookieConsent: React.FC = () => {
         setIsVisible(false);
     };
 
+    const handleDecline = () => {
+        localStorage.setItem('cookieConsent', 'false');
+        setIsVisible(false);
+    };
+
     return (
         <div
             className={`fixed inset-0 z-[200] flex items-center justify-center p-4 transition-all duration-700 ${isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
@@ -44,7 +49,7 @@ const CookieConsent: React.FC = () => {
 
                 <div className="flex items-center gap-12 mt-4">
                     <button
-                        onClick={() => setIsVisible(false)}
+                        onClick={handleDecline}
                         className="text-[10px] font-black uppercase tracking-[0.4em] text-white/20 hover:text-white transition-all underline underline-offset-8"
                     >
                         Decline
@@ -53,7 +58,7 @@ const CookieConsent: React.FC = () => {
                         onClick={handleAccept}
                         className="px-16 py-6 bg-accent-gold text-primary font-black uppercase text-[10px] tracking-[0.5em] hover:bg-white transition-all shadow-2xl"
                     >
-                        Easy Shop and Customer Service
+                        Accept
                     </button>
                 </div>
 
